@@ -37,12 +37,12 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'الهاتف',
-      details: ['+966 55 123 4567', '+966 11 765 4321'],
+      details: ['+905375447112', '+63 951 094 2174'],
     },
     {
       icon: Mail,
       title: 'البريد الإلكتروني',
-      details: ['info@md85bs.com', 'support@md85bs.com'],
+      details: ['freenet128@gmail.com', 'support@amzzon.store'],
     },
     {
       icon: Clock,
@@ -55,11 +55,11 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-medium mb-4">
+          <span className="inline-block px-4 py-2 bg-green-100 text-green-600 rounded-full text-sm font-medium mb-4">
             تواصل معنا
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            نحن هنا <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">لخدمتك</span>
+            نحن هنا <span className="bg-gradient-to-r from-green-600 to-orange-500 bg-clip-text text-transparent">لخدمتك</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             لديك سؤال أو تحتاج مساعدة؟ لا تتردد في التواصل معنا. فريقنا جاهز للإجابة على جميع استفساراتك.
@@ -72,9 +72,9 @@ const Contact = () => {
               {contactInfo.map((info, index) => (
                 <div
                   key={index}
-                  className="p-6 bg-gray-50 rounded-2xl hover:bg-gradient-to-br hover:from-blue-50 hover:to-purple-50 transition-all"
+                  className="p-6 bg-gray-50 rounded-2xl hover:bg-gradient-to-br hover:from-green-50 hover:to-orange-50 transition-all"
                 >
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-green-600 to-orange-500 rounded-xl flex items-center justify-center mb-4">
                     <info.icon className="w-6 h-6 text-white" />
                   </div>
                   <h4 className="font-semibold text-gray-900 mb-2">{info.title}</h4>
@@ -85,7 +85,7 @@ const Contact = () => {
               ))}
             </div>
 
-            <div className="p-6 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl text-white">
+            <div className="p-6 bg-gradient-to-br from-green-600 to-orange-500 rounded-2xl text-white">
               <div className="flex items-center gap-4 mb-4">
                 <MessageCircle className="w-8 h-8" />
                 <div>
@@ -132,7 +132,7 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       placeholder="اسمك الكامل"
-                      className="w-full pr-10 pl-4 py-3 bg-white border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                      className="w-full pr-10 pl-4 py-3 bg-white border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
                     />
                   </div>
                 </div>
@@ -147,7 +147,7 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       placeholder="example@email.com"
-                      className="w-full pr-10 pl-4 py-3 bg-white border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                      className="w-full pr-10 pl-4 py-3 bg-white border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
                     />
                   </div>
                 </div>
@@ -164,7 +164,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     placeholder="موضوع رسالتك"
-                    className="w-full pr-10 pl-4 py-3 bg-white border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    className="w-full pr-10 pl-4 py-3 bg-white border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
                   />
                 </div>
               </div>
@@ -178,14 +178,14 @@ const Contact = () => {
                   required
                   rows={5}
                   placeholder="اكتب رسالتك هنا..."
-                  className="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
+                  className="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all resize-none"
                 />
               </div>
 
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-xl hover:shadow-xl hover:shadow-blue-500/30 transition-all flex items-center justify-center gap-2 disabled:opacity-70"
+                className="w-full py-4 bg-gradient-to-r from-green-600 to-orange-500 text-white font-medium rounded-xl hover:shadow-xl hover:shadow-green-500/30 transition-all flex items-center justify-center gap-2 disabled:opacity-70"
               >
                 {isSubmitting ? (
                   <>

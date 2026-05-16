@@ -2,9 +2,7 @@ import { useState } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
-import Services from './components/Services';
-import Gallery from './components/Gallery';
-import Testimonials from './components/Testimonials';
+import Products from './components/Products';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -16,10 +14,9 @@ function App() {
       <Header activeSection={activeSection} setActiveSection={setActiveSection} />
       <main>
         <section id="home"><Hero /></section>
+        <section id="deals"><Products /></section>
+        <section id="products"><Products /></section>
         <section id="about"><About /></section>
-        <section id="services"><Services /></section>
-        <section id="gallery"><Gallery /></section>
-        <section id="testimonials"><Testimonials /></section>
         <section id="contact"><Contact /></section>
       </main>
       <Footer />
